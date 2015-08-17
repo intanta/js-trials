@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="calendar.js"></script>
+  <style>
+    #date{
+		margin-bottom:10px;
+	}
+	#calendar-wrapper{
+		width:250px;
+		position:relative;
+	}
+	#month-table{
+		width:100%;
+		table-layout: fixed;
+	}
+	#month-table caption{
+		font-size:1.3em;
+		font-weight:bold;
+		margin-bottom:5px;
+	}
+
+	#month-table td,
+	#month-table th{
+		width:100%;
+		text-align:right;
+	}
+	#month-table td{
+		border:1px solid #D9DDDE;
+		background-color: #D9DDDE;
+	}
+	.not_current{
+		color:#B2B6B8;
+		cursor:default;
+	}
+	.current{
+		color:#000;
+		cursor:pointer;
+	}
+
+	.toggle-button{
+		background-color:#000;
+		width:20px;
+		height:20px;
+		border-radius:50%;
+		color:#FFF;
+		font-weight:bold;
+		position:absolute;
+		text-align:center;
+		cursor:pointer;
+	}
+	.prev{
+		left:0;
+	}
+	.next{
+		right:0;
+	}
+  </style>
+</head>
+
+<body>
+	<div id='calendar-wrapper'>
+		<input id ='date' type = 'text' value = ''></input>
+		<div data-toggle='previous' class = 'toggle-button prev' ><</div>
+		<div data-toggle='next' class = 'toggle-button next'>></div>
+		<table id='month-table'>
+			<caption></caption>
+				<th>Пн</th>
+				<th>Вт</th>
+				<th>Ср</th>
+				<th>Чт</th>
+				<th>Пт</th>
+				<th>Сб</th>
+				<th>Вс</th>
+		</table>
+	</div>
+</body>
+
+
+
+</html>
